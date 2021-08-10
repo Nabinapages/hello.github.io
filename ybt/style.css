@@ -1,0 +1,243 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url('./images/nepal.jpg') ;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+nav{
+	width: 100%; height: 15vh;
+	background:grey;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+}
+nav.logo{
+	width: 25%
+	text-align:center;
+
+}
+nav .menu{
+	width: 40%;
+	display: flex;
+	justify-content:space-around;
+	
+}
+nav .menu a{
+	width: 25%;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+
+}
+
+main{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+.animate__animated.animate__heartBeat {
+  animation-iteration-count: infinite;
+}
+
+section h3{
+	font-size: 35px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 2px black;
+
+}
+section h1{
+	margin: 30px 0 20px 0;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+	text-transform: uppercase;
+}
+section p{
+	font-size: 25px;
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+
+
+}
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all;
+	transition-delay: 1s;
+
+}
+.btnone{
+
+	background:green;
+	color: #00b894;
+	font-weight: bold;
+
+
+}
+.btone:hover{
+	background: #00b894;
+	color:#00b894;
+
+}
+.btntwo{
+	background: #00b894;
+	color: white;
+}
+.btntwo:hover{
+	background:#fff;
+	color: #00b894;
+}
+.change_content:after{
+
+
+	content:' ';
+	animation: changetext 2s infinite linear;
+	color: #00b894;
+}
+
+
+
+@keyframes changetext{
+	0%{content: "Mustang";}
+	20%{ content: "manang"; }
+	35%{content: "pokhara";}
+	60%{content: "kathmandu";}
+	80%{content: "lumbini";}
+	100%{content: "solukhumbu";}
+}
+article{
+	width: 1000px;
+	border:2px solid grey;
+	padding: 10px;
+	margin: 20px;
+
+}
+
+	
+	
+
+
+img{
+	height: 100vh;
+	width: 100%;
+}
+form{
+	color: green;
+	background: blue;
+}
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+  
+  nav{
+	background: #0082e6;
+	height: 80px;
+	width: 100%;
+  }
+  label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+  }
+  nav ul{
+	float: right;
+	margin-right: 20px;
+  }
+  nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+  }
+  nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+  }
+  a.active,a:hover{
+	background: #1b9bff;
+	transition: .5s;
+  }
+  .checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+  }
+  #check{
+	display: none;
+  }
+  @media (max-width: 952px){
+	label.logo{
+	  font-size: 30px;
+	  padding-left: 50px;
+	}
+	nav ul li a{
+	  font-size: 16px;
+	}
+  }
+  @media (max-width: 858px){
+	.checkbtn{
+	  display: block;
+	}
+	ul{
+	  position: fixed;
+	  width: 100%;
+	  height: 100vh;
+	  background: #2c3e50;
+	  top: 80px;
+	  left: -100%;
+	  text-align: center;
+	  transition: all .5s;
+	}
+	nav ul li{
+	  display: block;
+	  margin: 50px 0;
+	  line-height: 30px;
+	}
+	nav ul li a{
+	  font-size: 20px;
+	}
+	a:hover,a.active{
+	  background: none;
+	  color: #0082e6;
+	}
+	#check:checked ~ ul{
+	  left: 0;
+	}
+  }
+
+
